@@ -1,0 +1,309 @@
+{
+  "version": 1,
+  "updatedAt": "2026-10-26T17:00:00+08:00",
+  "title": "Agent 入门 · 零基础",
+  "subtitle": "给完全零基础的你 · 每天一小课",
+  "remoteContentUrl": null,
+  "lessons": [
+    {
+      "id": "lesson-01",
+      "day": 1,
+      "title": "什么是 Agent（智能体）",
+      "subtitle": "和大模型聊天有什么不同",
+      "durationMin": 20,
+      "difficulty": "入门",
+      "tags": ["Agent", "基础概念"],
+      "goals": [
+        "能用自己的话说明：Agent（智能体）是什么",
+        "能分清：普通聊天机器人 vs Agent，差在哪里",
+        "能举出一个生活例子，说明为什么大家最近老在提 Agent"
+      ],
+      "concepts": [
+        {
+          "heading": "一句话版",
+          "body": "Agent（智能体）= 会「接目标 → 自己想步骤 → 动手用工具 → 看结果再调整」的 AI 助手。它不只是「陪你聊天、给你文字答案」，而是尽量把一件事办完。"
+        },
+        {
+          "heading": "生活类比：点外卖 vs 雇了个助理",
+          "body": "普通聊天机器人像一个很会说话的菜单：你问「附近有什么好吃的？」，它给你一堆建议，但订餐、付款、催单还得你自己做。Agent 更像一个助理：你说「帮我订一份明天中午的轻食，预算 40，送到公司」，它可以（在被允许的情况下）去查店、比价、下单，再告诉你「订好了，订单号是……」。关键差别只有一句：聊天机器人主要「说」；Agent 还要「干」。"
+        },
+        {
+          "heading": "四块积木（先记名字）",
+          "body": "大脑 = 大模型 / LLM（理解你、做决定）；规划 = 把大事拆成小步骤；工具 = 去搜索、算数、发邮件、查航班；记忆 = 记住刚才做到哪、你喜欢什么。行业里常说：Agent ≈ 大模型（大脑）+ 规划 + 工具 + 记忆。"
+        },
+        {
+          "heading": "为什么现在人人都在提它？",
+          "body": "大模型变强了，更能理解含糊的人话；能接「工具」了，搜索、日历、表格、各种 App——AI 不再只能干说；工作里真有需求，大家想要的是「少点手动点点点」。今天记住一句：Agent 热，是因为 AI 从「会聊」走向了「能办事」。"
+        }
+      ],
+      "compareTable": {
+        "headers": ["", "普通聊天机器人", "Agent（智能体）"],
+        "rows": [
+          ["主要目标", "回答问题、写文字", "完成一件任务"],
+          ["常见行为", "你问一句，它答一句", "自己多走几步：查→比→做→检查"],
+          ["会不会「动手」", "多数只给建议", "可以调用工具真正执行（需授权）"],
+          ["例子", "「去哪儿订机票比较好？」", "「按预算帮我查出可选航班并整理成表」"]
+        ]
+      },
+      "resources": [
+        {
+          "title": "菜鸟教程 · AI Agent 简介",
+          "url": "https://www.runoob.com/ai-agent/ai-agent-intro.html",
+          "minutes": 10,
+          "required": true,
+          "note": "重点看「Agent 是什么」「和普通 AI 的区别」；代码部分今天可跳过"
+        },
+        {
+          "title": "少数派 · 三步辨别真 AI 智能体",
+          "url": "https://sspai.com/post/101085",
+          "minutes": 8,
+          "required": true,
+          "note": "抓住「聊天机器人答政策 vs 智能体直接帮你走完退货流程」那个例子"
+        },
+        {
+          "title": "掘金 · 给非技术人员的通俗指南",
+          "url": "https://juejin.cn/post/7670727899905212457",
+          "minutes": 5,
+          "required": false,
+          "note": "选做，巩固直觉"
+        }
+      ],
+      "exercises": [
+        {
+          "title": "找「真助手」感",
+          "steps": [
+            "想一个最近真实想办的小事",
+            "写三行：① 我的目标是：____ ② 如果只是聊天机器人，它大概只会：____ ③ 如果是 Agent，我希望它额外帮我做：____（至少 2 个具体动作）"
+          ]
+        },
+        {
+          "title": "30 秒口述",
+          "steps": [
+            "对着镜子或他/她说一遍：「Agent 就是带了手脚的 AI：大模型负责想，工具负责干，它会按目标一步步办，而不只是聊天。」",
+            "说顺了，今天就达标。"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "下面哪一句更像 Agent？",
+          "options": [
+            "告诉你退货政策是什么",
+            "查订单 → 判断是否可退 → 创建退货单 → 把退货标签发给你（在授权范围内）",
+            "用很优美的文案安慰你「别生气」"
+          ],
+          "answer": 1,
+          "explain": "A/C 主要是「说话」；B 才是「把事办完」。"
+        },
+        {
+          "q": "「LLM / 大模型」在 Agent 里更像什么角色？",
+          "options": ["手脚", "大脑", "电源插头"],
+          "answer": 1,
+          "explain": "大模型是大脑；搜索、下单等是工具。"
+        },
+        {
+          "q": "判断：只要产品名字里写了「智能体 / Agent」，它就一定能自动帮你完成多步骤任务。",
+          "options": ["对", "错"],
+          "answer": 1,
+          "explain": "名字可以乱写；要看是否真能拆步骤、调工具。"
+        }
+      ],
+      "preview": "第2课：Skill（技能）是什么——给 Agent 准备的「可复用工作手册」。"
+    },
+    {
+      "id": "lesson-02",
+      "day": 2,
+      "title": "Skill（技能）是什么",
+      "subtitle": "给 Agent 的可复用工作手册",
+      "durationMin": 20,
+      "difficulty": "入门",
+      "tags": ["Skill", "工作手册"],
+      "goals": [
+        "能用一句话说清 Skill 是什么",
+        "能分清 Prompt（临时吩咐）和 Skill（固定手册）",
+        "知道 Skill、Agent、MCP 各自解决什么问题"
+      ],
+      "concepts": [
+        {
+          "heading": "一句话",
+          "body": "Skill = 给 Agent 准备的「可复用工作手册」。告诉它：什么时候该用、分几步做、用什么工具、输出长什么样。写一次，以后说到相关事它就按手册来，不用你每次从头教。"
+        },
+        {
+          "heading": "生活类比",
+          "body": "Prompt（提示词）像你每次临时说的话，像「今天穿什么」现想。Skill 像衣柜里那套「周一上班装」——你说「上班」，它自己拿出来按固定流程穿好。也可以想成：新同事抽屉里的入职手册（怎么写周报、怎么报销），用到再翻开。"
+        },
+        {
+          "heading": "它长什么样？（先有印象）",
+          "body": "通常是一个小文件夹，核心是一份叫 SKILL.md 的说明书：上面写名字和「什么时候用」，下面写步骤。需要时 Agent 才打开详细步骤，平时不占脑子。"
+        },
+        {
+          "heading": "和 Agent、MCP 的关系（超重要）",
+          "body": "Agent 解决「会不会办事」——像一位会动手的同事。Skill 解决「这件事具体怎么干」——像菜谱 / 工作手册。MCP 解决「怎么连上外部工具和数据」——像水电气管 / USB-C 接口。Skill 是菜谱；MCP 是灶台和水电。没有水电，菜谱也做不成饭；只有水电没有菜谱，同事也不知道今天煮什么。"
+        }
+      ],
+      "compareTable": {
+        "headers": ["", "解决什么问题", "类比"],
+        "rows": [
+          ["Agent", "会不会「办事」", "一位会动手的同事"],
+          ["Skill", "「这件事具体怎么干」", "菜谱 / 工作手册"],
+          ["MCP", "「怎么连上外部工具和数据」", "水电气管 / USB-C"]
+        ]
+      },
+      "resources": [
+        {
+          "title": "Google Cloud 中文 · 什么是智能体技能？",
+          "url": "https://cloud.google.com/discover/ai-agent-skills?hl=zh-CN",
+          "minutes": 10,
+          "required": true,
+          "note": "含「Skill vs MCP」对照，很适合零基础"
+        },
+        {
+          "title": "认识 AgentSkill（橙皮书·白话）",
+          "url": "https://daoark.com/books/skill/ch01-%E8%AE%A4%E8%AF%86agentskill.html",
+          "minutes": 12,
+          "required": true,
+          "note": "类比很多，零基础友好"
+        },
+        {
+          "title": "Open Agent Skills 简介",
+          "url": "https://openagentskills.dev/zh/docs/introduction",
+          "minutes": 5,
+          "required": false,
+          "note": "选做，扫读即可"
+        }
+      ],
+      "exercises": [
+        {
+          "title": "给一件小事写「迷你手册」",
+          "steps": [
+            "选一件你常做的小事（比如「每周日整理下周待办」）",
+            "写出：① 什么时候用 ② 分哪 3 步 ③ 最后输出长什么样",
+            "这就是一份迷你 Skill 的雏形——不用写代码"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Skill 更像什么？",
+          "options": ["临时随口说的一句话", "可复用的工作手册 / 菜谱", "给电器充电的插座"],
+          "answer": 1,
+          "explain": "Skill 是写好的可复用流程，不是一次性 Prompt。"
+        },
+        {
+          "q": "「菜谱」对应三个词里的哪个？",
+          "options": ["Agent", "Skill", "MCP"],
+          "answer": 1,
+          "explain": "Skill = 菜谱；Agent = 同事；MCP = 水电 / 插头。"
+        },
+        {
+          "q": "有了 Skill，还需要 MCP 吗？",
+          "options": ["完全不需要", "如果要连外部工具/数据，通常还需要", "MCP 会自动替代 Skill"],
+          "answer": 1,
+          "explain": "菜谱（Skill）和水电（MCP）各管一件事，常一起用。"
+        }
+      ],
+      "preview": "第3课：MCP 是什么——AI 的「USB-C」标准插头。"
+    },
+    {
+      "id": "lesson-03",
+      "day": 3,
+      "title": "MCP 是什么",
+      "subtitle": "AI 的 USB-C：连上外部工具的标准插头",
+      "durationMin": 20,
+      "difficulty": "入门",
+      "tags": ["MCP", "协议", "工具"],
+      "goals": [
+        "能说出 MCP 的全称和人话解释",
+        "能记住 Host / Client / Server 三个角色的生活版",
+        "能口头回答：Agent、Skill、MCP 哪个是同事、菜谱、水电"
+      ],
+      "concepts": [
+        {
+          "heading": "全称与一句话",
+          "body": "MCP = Model Context Protocol（模型上下文协议）。人话：让 AI 应用用同一种「插头」连接各种外部工具和数据的开放标准。常被叫做「AI 的 USB-C」：工具做一次，很多 AI 应用都能用。"
+        },
+        {
+          "heading": "为什么需要它？",
+          "body": "没有标准时：每个 AI × 每种工具都要单独对接，像每家电器插头形状都不同。有了 MCP：AI 应用实现一次「插口」，工具做成一次「插头」，两边都能复用。"
+        },
+        {
+          "heading": "三个角色（记生活版）",
+          "body": "Host（宿主）= 你正在用的那个 AI 软件（如 Cursor、Claude 桌面版）。Client（客户端）= 软件里负责「对接插头」的小模块，用户一般看不见。Server（服务器）= 真正提供能力的那一头（查天气、读文件、连邮箱、搜网页……）。你对 Host 说话 → 大脑觉得需要动手 → 通过 MCP 去找合适的 Server → Server 干完把结果拿回来 → Host 用正常人话告诉你。"
+        },
+        {
+          "heading": "MCP 能提供的三样东西",
+          "body": "① 工具（Tools）：真正「做事」的功能（查天气、写文件）——通常由模型决定要不要调用。② 资源（Resources）：只读资料（文档、数据）——给大脑当参考。③ 提示（Prompts）：预制好的对话模板——方便你一键启动某类任务。了解即可，不必背定义。"
+        },
+        {
+          "heading": "一张总图（背下来就够用）",
+          "body": "你说话 → Agent（会办事的助手）→ 大脑大模型想清楚要干什么 → Skill 工作手册告诉怎么干 → MCP 标准插头连上邮箱/搜索/日历 → 工具真正动手 → 把结果告诉你。"
+        }
+      ],
+      "compareTable": {
+        "headers": ["角色", "人话", "例子"],
+        "rows": [
+          ["Host（宿主）", "你正在用的 AI 软件", "Cursor、聊天助手"],
+          ["Client（客户端）", "软件里对接插头的模块", "用户一般看不见"],
+          ["Server（服务器）", "真正提供能力的那一头", "查天气、读文件、连邮箱"]
+        ]
+      },
+      "resources": [
+        {
+          "title": "AWS 中文 · 什么是 MCP？",
+          "url": "https://docs.aws.amazon.com/zh_cn/prescriptive-guidance/latest/mcp-strategies/what-is-mcp.html",
+          "minutes": 12,
+          "required": true,
+          "note": "先读「了解工具」和「什么是 MCP」两段即可"
+        },
+        {
+          "title": "Microsoft 中文 · MCP 核心概念",
+          "url": "https://github.com/microsoft/mcp-for-beginners/blob/main/translations/zh-CN/01-CoreConcepts/README.md",
+          "minutes": 8,
+          "required": true,
+          "note": "扫读架构图和 Host/Client/Server 即可"
+        },
+        {
+          "title": "MCP 中文快速入门导航",
+          "url": "https://modelcontextprotocol.info/zh-cn/docs/quickstart/",
+          "minutes": 5,
+          "required": false,
+          "note": "偏动手，今天可只点开看看目录"
+        }
+      ],
+      "exercises": [
+        {
+          "title": "30 秒总复习",
+          "steps": [
+            "口头回答：「Agent、Skill、MCP 三个词，哪个是同事、哪个是菜谱、哪个是水电？」",
+            "标准答：Agent=同事，Skill=菜谱，MCP=水电/USB-C"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "MCP 的全称是？",
+          "options": ["My Cool Plugin", "Model Context Protocol（模型上下文协议）", "Mobile Content Package"],
+          "answer": 1,
+          "explain": "Model Context Protocol，常被叫「AI 的 USB-C」。"
+        },
+        {
+          "q": "「真正去查天气 / 读文件」的那一头，更像哪个角色？",
+          "options": ["Host", "Client", "Server"],
+          "answer": 2,
+          "explain": "Server 提供能力；Host 是你正在用的软件。"
+        },
+        {
+          "q": "Agent / Skill / MCP 的生活类比，正确的是？",
+          "options": [
+            "Agent=菜谱，Skill=同事，MCP=水电",
+            "Agent=同事，Skill=菜谱，MCP=水电/USB-C",
+            "Agent=USB-C，Skill=同事，MCP=菜谱"
+          ],
+          "answer": 1,
+          "explain": "同事办事、菜谱教怎么做、水电/插头负责连上外部能力。"
+        }
+      ],
+      "preview": "第4课：大模型 / ChatGPT 这类 AI 在干什么——先弄清大脑会什么、不会什么。"
+    }
+  ]
+}
